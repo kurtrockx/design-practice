@@ -21,10 +21,9 @@ export default function Navbar() {
   return (
     <>
       <UpperNav />
-      <nav className="grid grid-cols-4 px-8 py-2 shadow-sm">
+      <nav className="grid grid-cols-4 items-center px-8 py-2 shadow-sm">
         <Logo />
-        <div className="flex flex-col col-span-2">
-          <div className="h-10"></div>
+        <div className="col-span-2 flex h-full flex-col justify-end">
           <DropMenuContainer>
             {menuItems.map((item) => (
               <DropMenuItem name={item.name} className={item.className} />

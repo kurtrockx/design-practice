@@ -1,7 +1,3 @@
 export default function DropMenuContainer({ children }) {
-  return (
-    <ul className="flex flex-1 justify-center gap-x-6 ">
-      {children}
-    </ul>
-  );
+  return <ul className="flex justify-center gap-x-8 h-full">{children}</ul>;
 }
