@@ -1,12 +1,12 @@
 export default function Banner() {
   return (
     <div className="relative flex justify-center">
-      <div className="absolute bottom-20 left-60 space-y-1.5">
+      <div className="absolute bottom-15 left-60 space-y-1.5">
         <h2 className="w-max bg-white px-1 text-xl font-bold">UP TO 50% OFF</h2>
-        <h4 className="w-max bg-white px-1">
+        <h4 className="w-max bg-white px-1 text-md">
           From 09 Jun to 16 Jun 2025. T&Cs apply. DTI Fair Trade
         </h4>
-        <h4 className="w-max bg-white px-1">
+        <h4 className="w-max bg-white px-1 text-md">
           Permit No. FTEB-227212 Series of 2025{" "}
         </h4>
 
