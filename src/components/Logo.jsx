@@ -1,6 +1,6 @@
 export default function Logo() {
   return (
-    <div className="flex size-14 max-w-1/3 items-center">
+    <div className="flex size-14 max-w-1/3 items-center cursor-pointer">
       <svg
         role="presentation"
         viewBox="100 100 50 32"
