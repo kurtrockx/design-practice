@@ -2,4 +2,6 @@
 
 html {
     font-family: 'century gothic';
+    max-width: 100dvw;
+    overflow-x: hidden;
 }
