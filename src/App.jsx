@@ -1,15 +1,14 @@
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
-import SortButtons from "./components/SortButtons";
 import SortHeader from "./components/SortHeader";
 import MainContent from "./layout/MainContent";
 
-const header1 = [
-  { name: "FIRST TIME ON SALE" },
-  { name: "50% OFF" },
-  { name: "40% OFF" },
-  { name: "30% OFF" },
-  { name: "MID-YEAR SALE 🔥" },
+const firstHeader = [
+  { name: "FIRST TIME ON SALE", active: false, order: 1 },
+  { name: "50% OFF", active: false, order: 2 },
+  { name: "40% OFF", active: false, order: 3 },
+  { name: "30% OFF", active: false, order: 4 },
+  { name: "MID-YEAR SALE 🔥", active: false, order: 5 },
 ];
 
 export default function App() {
@@ -18,11 +17,7 @@ export default function App() {
       <Navbar />
       <Banner />
       <MainContent>
-        <SortHeader link={'Shop Now'}>
-          {header1.map((h) => (
-            <SortButtons name={h.name} />
-          ))}
-        </SortHeader>
+        <SortHeader headers={firstHeader} link={"Shop Now"} />
       </MainContent>
     </div>
   );

@@ -26,7 +26,7 @@ export default function Navbar() {
         <div className="col-span-2 flex h-full flex-col justify-end">
           <DropMenuContainer>
             {menuItems.map((item) => (
-              <DropMenuItem name={item.name} className={item.className} />
+              <DropMenuItem name={item.name} className={item.className} key={item.name}/>
             ))}
           </DropMenuContainer>
         </div>
