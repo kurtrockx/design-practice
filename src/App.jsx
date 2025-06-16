@@ -18,7 +18,7 @@ export default function App() {
       <Navbar />
       <Banner />
       <MainContent>
-        <SortHeader>
+        <SortHeader link={'Shop Now'}>
           {header1.map((h) => (
             <SortButtons name={h.name} />
           ))}
